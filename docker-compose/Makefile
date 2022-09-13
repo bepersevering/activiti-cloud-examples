@@ -3,7 +3,7 @@ VERSION := 1.0.1
 # If you need to put your Makefile in a different directory to your compose 
 # file, you will need to edit the variable below
 DOCKER_FILE := docker-compose.yml
-COMPOSE := docker-compose
+COMPOSE := docker compose
 SERVICE_COMMANDS := pull build down kill rm ps stop events unpause restart port pause create
 COMPOSE_COMMANDS := config version $(SERVICE_COMMANDS)
 SERVICES := $(shell $(COMPOSE) config --services)
